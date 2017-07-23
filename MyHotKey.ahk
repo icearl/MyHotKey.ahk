@@ -47,8 +47,15 @@ Run C:\Users\icear\AppData\Local\atom\atom.exe
 return
 
 ;谷歌
-:*:/g::
+:*:\g::
 Run http://www.google.com
+return
+
+CapsLock & F8::
+if (GetKeyState("alt") = 1)
+    Run http://www.google.com
+else
+    return
 return
 
 ::/b::
@@ -66,8 +73,8 @@ CapsLock & Space::send,#{Space}
 CapsLock & `;::send,{Enter}
 
 ;测试本ahk
-CapsLock & 6::
-Run D:\learn\AutoHotKey\MyHotKey.ahk
+CapsLock & F6::
+Run D:\data\my_github\MyHotKey.ahk\MyHotKey.ahk
 ;SetTimer, enter, 100
 return
 
@@ -78,8 +85,12 @@ return
 ;CapsLock & E::send,#{E}
 
 ;上页翻页键映射
-CapsLock & ,::Send {PgUp}
-CapsLock & .::Send {PgDn}
+;CapsLock & ,::Send {PgUp}
+;CapsLock & .::Send {PgDn}
+
+;大于、小于号< >
+CapsLock & ,::Send +{,}
+CapsLock & .::Send +{.}
 
 ;HOME END键映射
 CapsLock & u:: Send {Home}
@@ -157,4 +168,23 @@ CapsLock & F1:: Send, {Volume_Mute}                                  ;|
 CapsLock & F2:: Send, {Volume_Down}                                  ;|
 CapsLock & F3:: Send, {Volume_Up}                                    ;|
 
-! & CapsLock & q::!{F4}   (Close Windows)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;编程;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CapsLock & /::send, ^{/}
+
+CapsLock & '::send, {=}
+CapsLock & [::send, {{}
+CapsLock & ]::send, {}}
+
+CapsLock & 1::send, {!}
+CapsLock & 2::send, {@}
+CapsLock & 3::send, {#}
+CapsLock & 4::send, {$}
+CapsLock & 5::send, {`%}
+CapsLock & 6::send, {^}
+CapsLock & 7::send, {&}
+CapsLock & 8::send, {*}
+CapsLock & 9::send, {(}
+CapsLock & 0::send, {)}
+CapsLock & -::send, {_}
+CapsLock & =::send, {+}
