@@ -42,12 +42,16 @@ return                                                               ;|
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;打开;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-:*:\a::
+:*:/atom::
 Run C:\Users\icear\AppData\Local\atom\atom.exe
 return
 
-:*:\o::
-Run C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
+;谷歌
+:*:\g::
+Run http://www.google.com
+return
+
+:*:\t::
 return
 
 ;开机打开工作环境
@@ -56,11 +60,6 @@ Run http://www.google.com
 Run C:\Users\icear\AppData\Local\atom\atom.exe
 Run C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
 Run, explorer
-return
-
-;谷歌
-:*:\g::
-Run http://www.google.com
 return
 
 CapsLock & F8::
