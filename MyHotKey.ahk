@@ -126,8 +126,6 @@ CapsLock & t:: Send +{End}   ;选择当前位置到行末的文字
 
 
 ;win-style 的快捷键
-CapsLock & q::Send ^q
-CapsLock & b::Send ^b
 CapsLock & c::Send ^c
 CapsLock & x::Send ^x
 CapsLock & v::Send ^v
