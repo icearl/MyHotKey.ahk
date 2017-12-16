@@ -46,8 +46,16 @@ return                                                               ;|
 Run C:\Users\icear\AppData\Local\atom\atom.exe
 return
 
+:*:\\::
+Run, cmd /K cd /D "C:\Users\icear"
+return
+
 :*:\o::
 Run C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
+return
+
+:*:\g::
+Run H:\software\cloudMusic\CloudMusic\cloudmusic.exe
 return
 
 ;开机打开工作环境
@@ -59,8 +67,8 @@ Run, explorer
 return
 
 ;谷歌
-:*:\g::
-Run http://www.google.com
+:*:\c::
+Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 return
 
 CapsLock & F8::
